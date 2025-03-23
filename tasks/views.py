@@ -9,3 +9,8 @@ def home(request):
 
 def show_patern(request):
     return HttpResponse("Hello World !")
+
+def show_specific_task(request,id):
+    print("Urls id is a ",id)
+    print(type(id))
+    return HttpResponse(f"Hello this is a Dynamic Urls id is {id}")
